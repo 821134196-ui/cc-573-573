@@ -8,6 +8,9 @@ target/
 dist/
 build/
 *.log
+# Go: SQLite 数据库文件与本地构建
+backend/*.db
+backend/frontend_dist/
 .claude/
 .cc-workbench/
 轨迹/
