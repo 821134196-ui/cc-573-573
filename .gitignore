@@ -5,7 +5,6 @@ node_modules/
 .venv/
 __pycache__/
 target/
-dist/
 build/
 *.log
 .claude/
@@ -13,3 +12,16 @@ build/
 轨迹/
 录屏/
 视频/
+
+# 前端构建产物由 run.sh 生成；保留 .gitkeep 以满足 go:embed
+dist/*
+!web/dist/
+web/dist/*
+!web/dist/.gitkeep
+
+# Go
+/bin/
+/data/
+*.db
+*.db-wal
+*.db-shm
